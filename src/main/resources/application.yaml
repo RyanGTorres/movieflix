@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: movieflix
+
+  datasource:
+    url: ${DATABASE_URL}
+    username: ${DATABASE_PASSWORD}
+    password: ${DATABASE_USERNAME}
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+
+  flyway:
+    enable: true

@@ -14,3 +14,14 @@ spring:
 
   flyway:
     enable: true
+
+springdoc:
+  api-docs:
+    path: /api/api-docs
+  swagger-ui:
+    path: /swagger/index.html
+
+
+movieflix:
+  security:
+    secret: ${SECRET_KEY}

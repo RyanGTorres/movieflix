@@ -1,4 +1,7 @@
 package com.movieflix.movieflix.controller.request;
 
-public record StreamingRequest(String name){
+import io.swagger.v3.oas.annotations.media.Schema;
+import jakarta.validation.constraints.NotEmpty;
+
+public record StreamingRequest(@NotEmpty(message = "O campo de nome é obrigatório") @Schema(type = "string", description = "Nome do Streaming") String name){
 }
